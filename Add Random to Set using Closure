@@ -1,0 +1,14 @@
+import UIKit
+
+var set = 5
+
+func addRand(number: () -> Void) {
+    print("I'm calculating")
+    number()
+    print("I finished!")
+}
+
+addRand {
+    var randomNum = Int(arc4random_uniform(100))
+    print("So \(set) + \(randomNum) equals \(set+randomNum)")
+}
